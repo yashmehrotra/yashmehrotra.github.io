@@ -6,20 +6,29 @@ body {
 h3 {
     word-spacing: 10px;
 }
+
 .ui.menu .item img.logo {
     margin-right: 1.5em;
 }
-.main.container {
+
+.ui.main.container.text {
     margin-top: 7em;
+    max-width: 900px !important;
 }
+
 .wireframe {
     margin-top: 2em;
 }
+
 .ui.footer.segment {
     margin: 5em 0em 0em;
     padding: 1em 0em;
     bottom: 0;
     width: 100%;
+}
+
+.items.item {
+    width: 850px;
 }
 
 .box {
