@@ -1,7 +1,11 @@
 body {
     background-color: #FFFFFF;
+    /*background-image: url("../images/background.jpg");*/
 }
 
+h3 {
+    word-spacing: 10px;
+}
 .ui.menu .item img.logo {
     margin-right: 1.5em;
 }
@@ -14,4 +18,18 @@ body {
 .ui.footer.segment {
     margin: 5em 0em 0em;
     padding: 1em 0em;
+    bottom: 0;
+    width: 100%;
+}
+
+.box {
+    height: 50px;
+}
+#pixpa-logo {
+    margin-left: 20px;
+    width: 100px;
+}
+
+#grofers-logo {
+    margin-top: 15px;
 }
