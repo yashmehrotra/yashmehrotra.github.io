@@ -34,6 +34,7 @@ h3 {
 .box {
     height: 50px;
 }
+
 #pixpa-logo {
     margin-left: 20px;
     width: 100px;
@@ -41,4 +42,13 @@ h3 {
 
 #grofers-logo {
     margin-top: 15px;
+}
+
+#gotham {
+    background: url('../../assets/images/gotham.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.clr-white {
+    color: white;
 }
