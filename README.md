@@ -1,4 +1,1 @@
-yashmehrotra.github.io
-======================
-
-My Personal Blog
+# yashmehrotra.github.io
