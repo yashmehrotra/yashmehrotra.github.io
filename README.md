@@ -1,2 +1,2 @@
 # yashmehrotra.github.io
-My Webpage
+My Homepage
