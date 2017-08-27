@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.com/post/2015-07-31-keep-calm-and-index-everything/</loc>
+    <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/2015-01-27-bruteforcing-cyberoam/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/</loc>
+    <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/</loc>
+    <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
