@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/yashmehrotra
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://yashmehrotra.github.io
+  * I am yashmehrotra (https://keybase.io/yashmehrotra) on keybase.
+  * I have a public key with fingerprint 4A36 E875 560F D9B7 5FA2  D871 B2AE 5A38 F23C 5D2B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f0c001947e331454e9f7266bbb58762be2ccebd251e0573d0d22bcc45802faf00a",
+            "fingerprint": "4a36e875560fd9b75fa2d871b2ae5a38f23c5d2b",
+            "host": "keybase.io",
+            "key_id": "b2ae5a38f23c5d2b",
+            "kid": "0101f0c001947e331454e9f7266bbb58762be2ccebd251e0573d0d22bcc45802faf00a",
+            "uid": "965770a90eb0270f96fdb983a5c84919",
+            "username": "yashmehrotra"
+        },
+        "service": {
+            "hostname": "yashmehrotra.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1475969860,
+    "expire_in": 157680000,
+    "prev": "ae867414a40e4aad009c80726cbc168f5efb6da9a2d9d6b20235a47d2fb4e732",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUltIFFEY3lWzXU2KECmIiiHroVXOnJkzl83HihRDLC8hxHbOzJndqd2dbWbc
+0rSHEioo0RdBslLsAmob+lAP1kM9lGL2EBQYXckou2AWQWFBZ6zefOy8HM5/vu/j
++/7/7yjI9gX8I5kG5UvZ3s3+iRniq/9xvPwIRyy9iQsf4Q7QhYvGdeq4kQOmzoU5
+wAPeABoAvCrKVBB4EYlUNWQoSYQQpMgSJBRqGiU6RDwFSBZ0oENINE1ECoAGNgDA
+XIgzzGSU2inbTLpMVsSCRBUZIQkYukpkZGCoKzJPIKYIC4oBBQ3pkDBizHI8BjNH
+sENLTYvV2COyYG8R/H/23bggp0pIlgFWASUAysBQJUMnqiJgpCmiyqse0KF2Eico
+QzdhJ5agMdtybcy1hjj2kzY16jXXS7MIqjRqurFG8iddipUszYozTMx1U07Y03Cb
+Uh7pECWRv3IRYiZ11lXGSFPbMa0kF+YZUnNNT58XZaRKqiKBEEcPp0ybRkwPgWRJ
+AeywkaRsmmaamCqSLPIiFgEVMdYBUDUFsFZpROMlxUDUIJKOVTYiVZcIBFBAWJR1
+aBCRygLkvIQHkxYXlphPHGWSjhlNYrfRplxr3in/mhyfP+DLXZLl7ZsvL7ji3xJ2
+fAv4RgeD/X3tdcHbbg7aoI1VN2/7uuXB9ODIzp+JRO9sZEc8ixeGNo1MvWo4fDQ/
+c+feo6n+kqr8+vKBvtfWubLVMw+ne5wn9Hl0enTV46LgmX3XLwzBY0+7S2bKPwjV
+af+LW5VxufiN73LVfE1Xy8q6hs8Ve2pjp7jS9RXf3fRuY//ZidqtazuzG5pz76Px
++U+3B6YrBxqX95YMTzS3GwUrrp0oJF+ywMv58kzX+cK2j3PdPUUT8F1x8+TLRGZ9
+99ue58OBubaTIX589GrLOt+ViDm3Xc9cyu7+FXwCam6+fT9743Xls9Cy6+NFaHBw
+UhvbmBo6vWvpLSF+MZD94u6Wzt8=
+=1//n
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yashmehrotra
+
+==================================================================
+
+
