@@ -12,21 +12,12 @@
         <h3>Recent Posts</h3>
         <!-- List down latest 5 posts-->
         {{ range .Data.Pages }}
-
             <div class="item">
-
-                <!-- {{ $.Scratch.Set "link" .RelPermalink }}
-                {{ with .Params.repo }} {{ printf "https://github.com/%s/%s/" $.Site.Params.githubUsername . | $.Scratch.Set "link" }} {{ end }}
-
-                {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }}
-                {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
-                -->
                 <span>
                     <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $.Scratch.Get "subtitle" }} </h4>
                 </span>
             </div>
         {{ end }}
-
     </div>
 
 </main>
