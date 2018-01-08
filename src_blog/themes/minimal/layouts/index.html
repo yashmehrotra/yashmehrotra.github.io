@@ -11,12 +11,17 @@
         <br><br><br>
         <h3>Recent Posts</h3>
         <!-- List down latest 5 posts-->
-        {{ range .Data.Pages }}
-            <div class="item">
-                <span>
-                    <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $.Scratch.Get "subtitle" }} </h4>
-                </span>
-            </div>
+        {{ range first 5 .Data.Pages }}
+
+            {{ if eq .Type "post" }}
+                {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "date" }}
+                {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+                <div class="item">
+                    <span>
+                        <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $.Scratch.Get "date" }} </h4>
+                    </span>
+                </div>
+            {{ end }}
         {{ end }}
     </div>
 
