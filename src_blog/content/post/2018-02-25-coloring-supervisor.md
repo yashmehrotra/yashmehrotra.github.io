@@ -10,11 +10,11 @@ type: post
 
 ### Why I colored it
 
-I use supervisor a lot (the organization I work for uses supervisor a lot), so this meant, time to time I had to do `supervisorctl status` and read the output.
+I use supervisor a lot (the organization I work for uses supervisor a lot), so this meant, from time to time I had to do `supervisorctl status` and read the output.
 
 ![Current supervisor output](/images/supervisor-old.png)
 
-I was always jealous with the JS folks as they had their [**pm2**](https://www.npmjs.com/package/pm2) which made things colorful and pretty by default.
+I was always jealous of the JS folks as they had their [**pm2**](https://www.npmjs.com/package/pm2) which made things colorful and pretty by default.
 
 ![Current pm2 output](/images/pm2.png)
 
