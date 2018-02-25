@@ -14,7 +14,7 @@ I use supervisor a lot (the organization I work for uses supervisor a lot), so t
 
 ![Current supervisor output](/images/supervisor-old.png)
 
-I was always jealous with the JS folks as they had their **pm2**[link it] which made things colorful and pretty by default.
+I was always jealous with the JS folks as they had their [**pm2**](https://www.npmjs.com/package/pm2) which made things colorful and pretty by default.
 
 ![Current pm2 output](/images/pm2.png)
 
