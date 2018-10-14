@@ -18,7 +18,8 @@
                 {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
                 <div class="item">
                     <span>
-                        <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $.Scratch.Get "date" }} </h4>
+                        <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
+                        <h6>{{ $.Scratch.Get "date" }} </h6>
                     </span>
                 </div>
             {{ end }}
