@@ -89,3 +89,23 @@ a:hover {
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
+
+/* tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #6495ed;
+    color: white;
+}
