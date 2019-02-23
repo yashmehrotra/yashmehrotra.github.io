@@ -17,8 +17,8 @@
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/post/2018-10-11-docker-multi-stage-build/</guid>
-      <description>With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications. Since containers only have the necessary applications(TODO: better wording), they are pretty lightweight, but what if I told you it can be further trimmed down. What if there was a way to only put those applications(TODO: better wording (software)) that are required for your application to run.
-It is in everybody&amp;rsquo;s best interest to keep the size of docker images small as:</description>
+      <description>With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications.
+Docker is a utility to efficiently create, ship, and run containers. They enable isolation and portability of application. However, one of the challenges of building docker images is to hold down the image size. One of the most effective ways to optimise the image sizes is to use multi stage builds.</description>
     </item>
     
     <item>

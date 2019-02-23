@@ -4,23 +4,28 @@ date: 2018-10-11
 type: post
 ---
 
-With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications. Since containers only have the necessary applications(TODO: better wording), they are pretty lightweight, but what if I told you it can be further trimmed down. What if there was a way to only put those applications(TODO: better wording (software)) that are required for your application to run.
+With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications.
+
+Docker is a utility to efficiently create, ship, and run containers. They enable isolation and portability of application. However, one of the challenges of building docker images is to hold down the image size. One of the most effective ways to optimise the image sizes is to use multi stage builds.
 
 It is in everybody's best interest to keep the size of docker images small as:
 
-1. Smaller images are downloaded faster
+1. Smaller images are pulled/pushed faster
 2. Smaller images take up less disk space
-3. Smaller images are uploaded faster
 
 ## Multi-stage builds
 
-In 2017, docker introduced multi-stage builds as a way of optimizing the docker images. (TODO SHORT EXPLANATION)
+In 2017, docker introduced multi-stage builds as a way of optimizing the docker images.
+
+> Multi-staged builds are useful where space is a constraint, and whilst it is always better to build small concise containers, it is easy to get carried away trying to shave off a few MBs. The main focus should be improving the workflow.
+
+With multi-stage builds, you use multiple `FROM` statements in your Dockerfile. Each FROM instruction can use a different base, and each of them begins a new stage of the build. You can selectively copy artifacts from one stage to another, leaving behind everything you don’t want in the final image.
 
 Now, we should look at some practical use cases for this
 
 ## Deploying applications
 
-Now, lets come to the practical part. How to write Dockerfiles that build minimal container images.
+Now, let's come to the practical part. How to write Dockerfiles that build minimal container images.
 
 ### Golang
 So you have a basic web server in Golang written using gin framework.
@@ -104,7 +109,7 @@ COPY . /code/
 WORKDIR /code
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["gunicorn", "-b 0.0.0.0:8000", "app:app"]
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8000", "app:app"]
 ```
 
 Note that we are using the alpine image which itself is lightweight. The size of this image is 242 MB. This size is still small as the number of dependent libraries are less, but for a production application the size of the image can go upto ~400 MB.
@@ -131,5 +136,15 @@ ENTRYPOINT ["gunicorn", "-b 0.0.0.0:8000", "app:app"]
 
 The size of this image is 84.5 MB. You can see that we are just using the libraries and the gunicorn executable from the previous image.
 
-## Conclusion ? (TODO: Change)
-Now that the size of the images are astronomically(TODO: Change) low, you can push out your changes much faster.
+## Takeaway
+
+This is how multi-stage builds stack up against normal builds
+
+| Language | Normal | Multi-stage |
+|----------|--------|-------------|
+| Python   | 274 MB | 84.5 MB     |
+| Golang   | 829 MB | 15.3 MB     |
+
+One importnant thing to keep in mind is that using multi-stage will not impact the build time of your container, the time difference between the build times is negligible
+
+Multi-stage builds are useful where space is a constraint, and whilst it is always better to build small concise containers, it is easy to get carried away trying to shave off a few megabytes. Even though they are great to use, they shouldn't be abused, the effort should always spent be towards improving the workflow.

@@ -154,25 +154,32 @@
 
     <br> <div class="text-justify">
 
-<p>With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications. Since containers only have the necessary applications(TODO: better wording), they are pretty lightweight, but what if I told you it can be further trimmed down. What if there was a way to only put those applications(TODO: better wording (software)) that are required for your application to run.</p>
+<p>With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications.</p>
+
+<p>Docker is a utility to efficiently create, ship, and run containers. They enable isolation and portability of application. However, one of the challenges of building docker images is to hold down the image size. One of the most effective ways to optimise the image sizes is to use multi stage builds.</p>
 
 <p>It is in everybody&rsquo;s best interest to keep the size of docker images small as:</p>
 
 <ol>
-<li>Smaller images are downloaded faster</li>
+<li>Smaller images are pulled/pushed faster</li>
 <li>Smaller images take up less disk space</li>
-<li>Smaller images are uploaded faster</li>
 </ol>
 
 <h2 id="multi-stage-builds">Multi-stage builds</h2>
 
-<p>In 2017, docker introduced multi-stage builds as a way of optimizing the docker images. (TODO SHORT EXPLANATION)</p>
+<p>In 2017, docker introduced multi-stage builds as a way of optimizing the docker images.</p>
+
+<blockquote>
+<p>Multi-staged builds are useful where space is a constraint, and whilst it is always better to build small concise containers, it is easy to get carried away trying to shave off a few MBs. The main focus should be improving the workflow.</p>
+</blockquote>
+
+<p>With multi-stage builds, you use multiple <code>FROM</code> statements in your Dockerfile. Each FROM instruction can use a different base, and each of them begins a new stage of the build. You can selectively copy artifacts from one stage to another, leaving behind everything you don’t want in the final image.</p>
 
 <p>Now, we should look at some practical use cases for this</p>
 
 <h2 id="deploying-applications">Deploying applications</h2>
 
-<p>Now, lets come to the practical part. How to write Dockerfiles that build minimal container images.</p>
+<p>Now, let&rsquo;s come to the practical part. How to write Dockerfiles that build minimal container images.</p>
 
 <h3 id="golang">Golang</h3>
 
@@ -255,7 +262,7 @@ COPY . /code/
 WORKDIR /code
 RUN pip install -r requirements.txt
 
-ENTRYPOINT [&quot;gunicorn&quot;, &quot;-b 0.0.0.0:8000&quot;, &quot;app:app&quot;]
+ENTRYPOINT [&quot;gunicorn&quot;, &quot;-b&quot;, &quot;0.0.0.0:8000&quot;, &quot;app:app&quot;]
 </code></pre>
 
 <p>Note that we are using the alpine image which itself is lightweight. The size of this image is 242 MB. This size is still small as the number of dependent libraries are less, but for a production application the size of the image can go upto ~400 MB.</p>
@@ -281,9 +288,37 @@ ENTRYPOINT [&quot;gunicorn&quot;, &quot;-b 0.0.0.0:8000&quot;, &quot;app:app&quo
 
 <p>The size of this image is 84.5 MB. You can see that we are just using the libraries and the gunicorn executable from the previous image.</p>
 
-<h2 id="conclusion-todo-change">Conclusion ? (TODO: Change)</h2>
+<h2 id="takeaway">Takeaway</h2>
 
-<p>Now that the size of the images are astronomically(TODO: Change) low, you can push out your changes much faster.</p>
+<p>This is how multi-stage builds stack up against normal builds</p>
+
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Normal</th>
+<th>Multi-stage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Python</td>
+<td>274 MB</td>
+<td>84.5 MB</td>
+</tr>
+
+<tr>
+<td>Golang</td>
+<td>829 MB</td>
+<td>15.3 MB</td>
+</tr>
+</tbody>
+</table>
+
+<p>One importnant thing to keep in mind is that using multi-stage will not impact the build time of your container, the time difference between the build times is negligible</p>
+
+<p>Multi-stage builds are useful where space is a constraint, and whilst it is always better to build small concise containers, it is easy to get carried away trying to shave off a few megabytes. Even though they are great to use, they shouldn&rsquo;t be abused, the effort should always spent be towards improving the workflow.</p>
 </div>
 
     
