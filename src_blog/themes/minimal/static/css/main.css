@@ -94,6 +94,7 @@ footer {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 12px;
 }
 
 td, th {
