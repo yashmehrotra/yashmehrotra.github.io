@@ -1,4 +1,4 @@
-baseURL = "http://yashmehrotra.com/"
+baseURL = "https://yashmehrotra.com/"
 languageCode = "en-us"
 title = "Yash Mehrotra"
 theme = "hugo-coder"
