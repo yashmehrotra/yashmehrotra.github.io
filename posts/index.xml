@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Yash Mehrotra</title>
-    <link>http://example.com/posts/</link>
+    <link>http://yashmehrotra.com/posts/</link>
     <description>Recent content in Posts on Yash Mehrotra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yashmehrotra.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2019: Year in review</title>
-      <link>http://example.com/posts/2020-02-09-2019-year-in-review/</link>
+      <link>http://yashmehrotra.com/posts/2020-02-09-2019-year-in-review/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/posts/2020-02-09-2019-year-in-review/</guid>
+      <guid>http://yashmehrotra.com/posts/2020-02-09-2019-year-in-review/</guid>
       <description>I always wanted to write a year in review post, but never got around to it.
 I wasn&amp;rsquo;t originally going to write this as I thought not much happened this year, but when I summed up a lot of small things that happened this year, I realised its worth writing about.
 Health and fitness I made drastic changes in my viewpoint and lifestyle with aspect to my diet and health which helped me lose my weight from 73.</description>
@@ -24,20 +24,20 @@ Health and fitness I made drastic changes in my viewpoint and lifestyle with asp
     
     <item>
       <title>Building minimal docker images using multi-stage builds</title>
-      <link>http://example.com/posts/2018-10-11-docker-multi-stage-build/</link>
+      <link>http://yashmehrotra.com/posts/2018-10-11-docker-multi-stage-build/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/posts/2018-10-11-docker-multi-stage-build/</guid>
+      <guid>http://yashmehrotra.com/posts/2018-10-11-docker-multi-stage-build/</guid>
       <description>With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications.
 Docker is a utility to efficiently create, ship, and run containers. They enable isolation and portability of application. However, one of the challenges of building docker images is to hold down the image size. One of the most effective ways to optimise the image sizes is to use multi stage builds.</description>
     </item>
     
     <item>
       <title>Coloring supervisor</title>
-      <link>http://example.com/posts/2018-02-25-coloring-supervisor/</link>
+      <link>http://yashmehrotra.com/posts/2018-02-25-coloring-supervisor/</link>
       <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/posts/2018-02-25-coloring-supervisor/</guid>
+      <guid>http://yashmehrotra.com/posts/2018-02-25-coloring-supervisor/</guid>
       <description>What is supervisor Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems.
 Why I colored it I use supervisor a lot (the organization I work for uses supervisor a lot), so this meant, from time to time I had to do supervisorctl status and read the output.
 I was always jealous of the JS folks as they had their pm2 which made things colorful and pretty by default.</description>
@@ -45,10 +45,10 @@ I was always jealous of the JS folks as they had their pm2 which made things col
     
     <item>
       <title>Keep Calm and Index Everything</title>
-      <link>http://example.com/posts/2015-07-31-keep-calm-and-index-everything/</link>
+      <link>http://yashmehrotra.com/posts/2015-07-31-keep-calm-and-index-everything/</link>
       <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/posts/2015-07-31-keep-calm-and-index-everything/</guid>
+      <guid>http://yashmehrotra.com/posts/2015-07-31-keep-calm-and-index-everything/</guid>
       <description>This post was originally written on lambda.grofers.com
 Currently at Grofers we are growing rapidly. And with this rapid-growth comes a huge amount of data. As we all know the (not so) famous saying:
  With great amount of data comes an itching need to analyse it.
@@ -58,10 +58,10 @@ We use PostgreSQL as our primary datastore.</description>
     
     <item>
       <title>Bruteforcing Cyberoam</title>
-      <link>http://example.com/posts/2015-01-27-bruteforcing-cyberoam/</link>
+      <link>http://yashmehrotra.com/posts/2015-01-27-bruteforcing-cyberoam/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/posts/2015-01-27-bruteforcing-cyberoam/</guid>
+      <guid>http://yashmehrotra.com/posts/2015-01-27-bruteforcing-cyberoam/</guid>
       <description>This post is about how me and Avijit retrieved multiplie cyberoam username/password combinations using python. This also highlights how vulnerable the system is if you are not using a more secure password . Even the default password given to us by the College are being recycled for many years.
 DISCLAIMER Before you read this, I want to clarify that we do not intend to use our findings in any unethical way.</description>
     </item>

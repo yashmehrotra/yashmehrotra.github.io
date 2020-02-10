@@ -1,0 +1,9 @@
+[submodule "src_blog/themes/hugo-coder."]
+	path = src_blog/themes/hugo-coder.
+	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "src_blog/themes/themes/hugo-coder"]
+	path = src_blog/themes/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "src_blog/themes/hugo-coder"]
+	path = src_blog/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
