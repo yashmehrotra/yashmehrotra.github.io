@@ -32,7 +32,7 @@ pygmentscodefencesguesssyntax = true
 
 [params.fathomAnalytics]
     siteID = "SKSNA"
-    rootURL = "analytics.yashmehrotra.com"
+    serverURL = "analytics.yashmehrotra.com"
 
 [[menu.main]]
     url = "/"
