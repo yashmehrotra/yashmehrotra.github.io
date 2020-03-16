@@ -42,7 +42,7 @@ Kubernetes provides its own specifications for CNI which are generally implement
 
 As per Matthew, the packet captures pointed towards an error in the server configuration. How could that be possible? These servers are working fine and serving the production workload. He then asked us to capture socket stats and network stats along with the tcpdumps. He was sure there was an error/misconfiguration on the EC2 machines and not any error on EKS.
 
-We created artificial traffic to obtain more detailed packet captures, sent it to Matthew, he analysed them and asked us to capture a different set of data. Performing packet captures for debugging this became a part of my daily routine.
+We created artificial traffic to obtain more detailed packet captures, sent them to Matthew, he analysed them and asked us to capture a different set of data. Performing packet captures for debugging this became a part of my daily routine.
 
 This traffic pumping and tcp-dumping went for a month, util I noticed an interesting anomaly.
 
