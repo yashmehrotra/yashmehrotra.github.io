@@ -6,7 +6,7 @@
     <description>Recent content on Yash Mehrotra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://yashmehrotra.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>The case of the missing packet: An EKS migration tale</title>
       <link>https://yashmehrotra.com/post/2020-03-16-case-of-missing-packet/</link>
-      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://yashmehrotra.com/post/2020-03-16-case-of-missing-packet/</guid>
-      <description>It was a pleasant saturday morning in Pune. I had to attend a family reunion at my relative&amp;rsquo;s place for which I was already late. While I was in the bath, the music on my phone was replaced with my ringtone. With wet hands, I reached out to see the caller ID. It was my team lead, which meant bad news was to be followed.
-You see, we had planned to migrate our production cluster from tops to EKS that day.</description>
+      <description>It was a pleasant Saturday morning in Pune. I had to attend a family reunion at my relative&amp;rsquo;s place for which I was already late. While I was in the bath, the music on my phone was replaced with my ringtone. With wet hands, I reached out to see the caller ID. It was my team lead, which meant bad news was to be followed.
+You see, we had planned to migrate our production cluster from kops to EKS that day.</description>
     </item>
     
     <item>
