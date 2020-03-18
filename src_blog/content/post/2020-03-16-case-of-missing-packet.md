@@ -103,6 +103,8 @@ There was a lot to take away from this month and a half long ordeal.
 - Add observability tools to your workflow. It was only after we saw bizarre connection anomalies (using our pinger daemon-set where every component was being pinged by another), we were able to move closer towards our solution.
 - Know thy system. Before the migration, we just browsed through the AWS CNI's documentation instead of thoroughly going through it's implementation. Had we known its internal working, we could have made better judgements in our debugging technique and hypothesised better about what was happening behind the scenes.
 
+*Follow the discussion at [Hacker News](https://news.ycombinator.com/item?id=22614488)*
+
 ## Further Reading
 
 - [AWS Blog for handling external SNAT](https://docs.aws.amazon.com/eks/latest/userguide/external-snat.html) (CNI architecture diagrams were taken from here)

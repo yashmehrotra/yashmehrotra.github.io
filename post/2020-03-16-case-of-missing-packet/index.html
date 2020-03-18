@@ -161,6 +161,7 @@ You see, we had planned to migrate our production cluster from kops to EKS that 
 <li>Add observability tools to your workflow. It was only after we saw bizarre connection anomalies (using our pinger daemon-set where every component was being pinged by another), we were able to move closer towards our solution.</li>
 <li>Know thy system. Before the migration, we just browsed through the AWS CNI&rsquo;s documentation instead of thoroughly going through it&rsquo;s implementation. Had we known its internal working, we could have made better judgements in our debugging technique and hypothesised better about what was happening behind the scenes.</li>
 </ul>
+<p><em>Follow the discussion at <a href="https://news.ycombinator.com/item?id=22614488">Hacker News</a></em></p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="https://docs.aws.amazon.com/eks/latest/userguide/external-snat.html">AWS Blog for handling external SNAT</a> (CNI architecture diagrams were taken from here)</li>
