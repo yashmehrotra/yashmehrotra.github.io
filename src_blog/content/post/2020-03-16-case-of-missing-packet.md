@@ -81,13 +81,13 @@ So, what role does `AWS_VPC_K8S_CNI_EXTERNALSNAT=true` play ?
 
 Communication within a VPC (such as pod to pod) is direct between private IP addresses and requires no **source network address translation (SNAT)**. When traffic is destined for an address outside of the VPC, the Amazon VPC CNI plugin for Kubernetes translates the private IP address of each pod to the primary private IP address assigned to the primary elastic network interface (network interface) of the node that the pod is running on.
 
-![Externl SNAT Disabled](https://docs.aws.amazon.com/eks/latest/userguide/images/SNAT-enabled.jpg)
+![Externl SNAT Disabled](/images/SNAT-enabled.jpg)
 
 Since the NLBs were in a different VPC, SNAT was taking place at the node via the CNI plugin. In this scenario, the CNI plugin was translating the IP address of the pod to the IP address of  the internet gateway, but, in the absence of an internet gateway, everything falls apart.
 
 Once external SNAT is enabled, the CNI plugin does not do any address translation. Traffic from the pod to the internet is translated by the NAT gateway.
 
-![Externl SNAT Disabled](https://docs.aws.amazon.com/eks/latest/userguide/images/SNAT-disabled.jpg)
+![Externl SNAT Disabled](/images/SNAT-disabled.jpg)
 
 ## Aftermath
 

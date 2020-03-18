@@ -147,10 +147,10 @@ You see, we had planned to migrate our production cluster from kops to EKS that 
 <p><img src="/images/aws-eks-diagram.png" alt="CNI Diagram"></p>
 <p>So, what role does <code>AWS_VPC_K8S_CNI_EXTERNALSNAT=true</code> play ?</p>
 <p>Communication within a VPC (such as pod to pod) is direct between private IP addresses and requires no <strong>source network address translation (SNAT)</strong>. When traffic is destined for an address outside of the VPC, the Amazon VPC CNI plugin for Kubernetes translates the private IP address of each pod to the primary private IP address assigned to the primary elastic network interface (network interface) of the node that the pod is running on.</p>
-<p><img src="https://docs.aws.amazon.com/eks/latest/userguide/images/SNAT-enabled.jpg" alt="Externl SNAT Disabled"></p>
+<p><img src="/images/SNAT-enabled.jpg" alt="Externl SNAT Disabled"></p>
 <p>Since the NLBs were in a different VPC, SNAT was taking place at the node via the CNI plugin. In this scenario, the CNI plugin was translating the IP address of the pod to the IP address of  the internet gateway, but, in the absence of an internet gateway, everything falls apart.</p>
 <p>Once external SNAT is enabled, the CNI plugin does not do any address translation. Traffic from the pod to the internet is translated by the NAT gateway.</p>
-<p><img src="https://docs.aws.amazon.com/eks/latest/userguide/images/SNAT-disabled.jpg" alt="Externl SNAT Disabled"></p>
+<p><img src="/images/SNAT-disabled.jpg" alt="Externl SNAT Disabled"></p>
 <h2 id="aftermath">Aftermath</h2>
 <p>Since moving to External SNAT, the cluster has not faced any networking problems till now, and I am happy to say that all our traffic is now migrated on to EKS without many hiccups.</p>
 <p>We also setup monitoring and alerting on the AWS CNI as well to prevent any unforeseen complication from catching us off-guard.</p>
