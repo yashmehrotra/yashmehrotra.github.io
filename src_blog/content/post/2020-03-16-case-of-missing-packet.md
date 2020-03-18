@@ -8,11 +8,15 @@ It was a pleasant Saturday morning in Pune.  I had to attend a family reunion at
 
 You see, we had planned to migrate our production cluster from kops to EKS that day. It was the first weekend after New Year's, we chose this time window due to it being the least traffic period for our platform. I had just come back from a week-long beach trip and was still in vacation mindset; not at all ready, nor aware of what I was about to face.
 
-*"Hello Vivek"*, I answered the phone trying my best to not get water on it.
+Me: *"Hello Vivek"*
 
-*"We have a situation, the platform is behaving really slowly, do you know what it could be ?"*. I knew that something would go wrong but never expected it to be a networking problem. After all, one of the major reasons for moving to EKS was a better networking experience, weave was proving very problematic to us.
+Vivek: *"We have a situation, the platform is behaving really slowly, do you know what it could be ?"*
 
-*"I don't know what it could be"*, I replied. *"Are you seeing any pattern?"*.  *"It's too early to tell, but we will be reverting soon, it's too unstable to carry on."*
+I knew that something would go wrong but never expected it to be a networking problem. After all, one of the major reasons for moving to EKS was a better networking experience, weave was proving very problematic to us.
+
+Me: *"I don't know what it could be, are you seeing any pattern?"*
+
+Vivek: *"It's too early to tell, but we will be reverting soon, it's too unstable to carry on."*
 
 ***"Shit"*** were the only words out of my mouth. We had been planning this for a long time. Right before going on vacation, I had setup a new production cluster and deployed all the required tooling on it. My colleague Sumit had migrated all the production apps on it while I was away.
 
@@ -68,7 +72,7 @@ We tried it, and to everyone's surprise, things magically started working as the
 
 ## How it works
 
-The role of the CNI plugin is to allocate VPC IP addresses to Kubernetes nodes and configure the necessary networking for pods on each node. The folks at Amazon decided to take one step further and be a bit brave. The AWS CNI also creates secondary IP addresses at the instance level, thus assigning each pod their own IP and making it accessible directly from outside the cluster.
+The role of the AWS CNI plugin is to allocate VPC IP addresses to Kubernetes nodes and configure the necessary networking for pods on each node. The folks at Amazon decided to take one step further and be a bit brave. The AWS CNI also creates secondary IP addresses at the instance level, thus assigning each pod their own IP and making it accessible directly from outside the cluster.
 
 
 ![CNI Diagram](/images/aws-eks-diagram.png)
@@ -77,9 +81,13 @@ So, what role does `AWS_VPC_K8S_CNI_EXTERNALSNAT=true` play ?
 
 Communication within a VPC (such as pod to pod) is direct between private IP addresses and requires no **source network address translation (SNAT)**. When traffic is destined for an address outside of the VPC, the Amazon VPC CNI plugin for Kubernetes translates the private IP address of each pod to the primary private IP address assigned to the primary elastic network interface (network interface) of the node that the pod is running on.
 
+![Externl SNAT Disabled](/images/SNAT-enabled.jpg)
+
 Since the NLBs were in a different VPC, SNAT was taking place at the node via the CNI plugin. In this scenario, the CNI plugin was translating the IP address of the pod to the IP address of  the internet gateway, but, in the absence of an internet gateway, everything falls apart.
 
 Once external SNAT is enabled, the CNI plugin does not do any address translation. Traffic from the pod to the internet is translated by the NAT gateway.
+
+![Externl SNAT Disabled](/images/SNAT-disabled.jpg)
 
 ## Aftermath
 
@@ -91,12 +99,12 @@ We also setup monitoring and alerting on the AWS CNI as well to prevent any unfo
 
 There was a lot to take away from this month and a half long ordeal.
 
-- While debugging any issue, especially in networking, all components across the stack should be suspects. Ruling out EKS as a possible culprit led to use wasting a lot of valuable time.
+- While debugging any issue, especially in networking, all components across the stack should be suspects. Ruling out EKS as a possible culprit led to us wasting a lot of valuable time.
 - Add observability tools to your workflow. It was only after we saw bizarre connection anomalies (using our pinger daemon-set where every component was being pinged by another), we were able to move closer towards our solution.
 - Know thy system. Before the migration, we just browsed through the AWS CNI's documentation instead of thoroughly going through it's implementation. Had we known its internal working, we could have made better judgements in our debugging technique and hypothesised better about what was happening behind the scenes.
 
 ## Further Reading
 
-- [AWS Blog for handling external SNAT](https://docs.aws.amazon.com/eks/latest/userguide/external-snat.html)
+- [AWS Blog for handling external SNAT](https://docs.aws.amazon.com/eks/latest/userguide/external-snat.html) (CNI architecture diagrams were taken from here)
 - [A reason for unexplained connection timeouts on Kubernetes/Docker](https://tech.xing.com/a-reason-for-unexplained-connection-timeouts-on-kubernetes-docker-abd041cf7e02)
 - [Github discussion on external SNAT in AWS CNI](https://github.com/awsdocs/amazon-eks-user-guide/pull/53)
