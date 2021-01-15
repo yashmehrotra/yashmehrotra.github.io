@@ -28,9 +28,9 @@ The question which arises is what can we do? Are we becoming too set in our ways
 
 ## Why an eventual compromise is the answer
 
-Going off the grid is impractical. Migrating away from an entire ecosystem is strenuous. The big companies (Facebook, Apple, Amazon & Google) are here to stay.
+Going off the grid is impractical. Migrating away from an entire ecosystem is strenuous. The FAAG are here to stay.
 
-An eventual compromise here means restricting yourself to use only a few services provided by those companies but only restricted to that. A trade-off essentially and making your peace with it.
+An eventual compromise here means restricting yourself to use only a few services provided by those companies but only limited to that. A trade-off essentially and making your peace with it.
 
 The bitter reality is that distancing yourself from these services comes at a greater cost of convenience. While there are some extremists who have taken those difficult steps, they also have to convince their friends and family as well to make the switch.
 
