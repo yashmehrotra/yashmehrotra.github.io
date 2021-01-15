@@ -104,7 +104,7 @@ Since the dawn of the digital age, we have accumulated massive amount of data ov
 **Search Engine**
 
 - I know, I know, the others are not as good as Google. But they are not all that bad. I've been using [DuckDuckGo](https://duckduckgo.com/) for quite sometime and it works 95% of the time, and is improving constantly.
-- The problem with Google is only does it scan and analyze all your searches, it has its [own biases](https://www.rt.com/usa/503964-whistleblower-google-skews-results/) and is known for [skewing the results](https://www.theregister.com/2020/10/21/google_search_iframe/) as [they see fit](https://www.ccn.com/google-manipulates-search-results-former-engineer-shockingly-confirms/).
+- The problem with Google is not only does it scan and analyze all your searches, it has its [own biases](https://www.rt.com/usa/503964-whistleblower-google-skews-results/) and is known for [skewing the results](https://www.theregister.com/2020/10/21/google_search_iframe/) as [they see fit](https://www.ccn.com/google-manipulates-search-results-former-engineer-shockingly-confirms/).
 
 ## Behavioral changes you can make
 
