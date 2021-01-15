@@ -183,4 +183,4 @@ New York Times published an [article](https://www.nytimes.com/interactive/2019/0
 ## Should we prepare for a future where every action taken will be eternally watched and scrutinized? There must be a better way!
 
 
-*Follow the discussion at [Hacker News](https://news.ycombinator.com/item?id=)*
+*Follow the discussion at [Hacker News](https://news.ycombinator.com/item?id=25791214)*
