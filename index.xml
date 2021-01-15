@@ -6,10 +6,17 @@
     <description>Recent content on Yash Mehrotra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://yashmehrotra.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yashmehrotra.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Close the curtains: A practical guide to privacy</title>
+      <link>https://yashmehrotra.com/post/2021-01-15-practical-guide-to-privacy/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yashmehrotra.com/post/2021-01-15-practical-guide-to-privacy/</guid>
+      <description>The need for privacy  Why should I care about privacy, I have nothing to hide
+ Until a few years back, this question was very difficult to answer. People always perceived privacy in the physical sense. No one grasped the concept of digital privacy, let alone care about it.
+You wouldn&amp;rsquo;t want a stranger to enter your home uninvited, right? So why treat your digital world any different. Your digital world contains private information like conversations, interactions, interests, and transactions that are worth protecting.</description>
+    </item>
     
     <item>
       <title>The case of the missing packet: An EKS migration tale</title>
