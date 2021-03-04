@@ -1,68 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://yashmehrotra.com/post/2021-01-15-practical-guide-to-privacy/</loc>
     <lastmod>2021-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/</loc>
     <lastmod>2021-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/</loc>
     <lastmod>2021-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/2020-03-16-case-of-missing-packet/</loc>
     <lastmod>2020-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/2020-02-09-2019-year-in-review/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/2018-10-11-docker-multi-stage-build/</loc>
     <lastmod>2018-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/2018-02-25-coloring-supervisor/</loc>
     <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/2015-07-31-keep-calm-and-index-everything/</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/post/2015-01-27-bruteforcing-cyberoam/</loc>
     <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/project/2015-01-27-bruteforcing-cyberoam/</loc>
     <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/project/</loc>
     <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yashmehrotra.com/tags/</loc>
   </url>
-  
 </urlset>

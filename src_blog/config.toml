@@ -30,10 +30,6 @@ pygmentscodefencesguesssyntax = true
 
     math = true
 
-[params.fathomAnalytics]
-    siteID = "SKSNA"
-    serverURL = "analytics.yashmehrotra.com"
-
 [[menu.main]]
     url = "/"
     name = "Home"
